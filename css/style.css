@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Varela+Round&display=swap");
+
+body {
+  background-color: antiquewhite;
+  font-size: 0.9rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 50px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 13px;
+  font-size: 0.9rem;
+}
+
+.brand img {
+  width: 53px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.container {
+  min-height: 60vh;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 10px;
+  padding: 25px;
+  background-image: url("../images/animation_music_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 350px 480px;
+}
+
+.songItem {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  align-items: center;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+.songItem:hover {
+    font-weight: bold;
+}
+
+.songItem img,
+#masterSongImage{
+  width: 40px;
+  height: 25px;
+  margin: 0 14px;
+  border-radius: 12px;
+}
+
+#masterSongImage{
+  position: relative;
+  top: 6px;
+}
+
+.songName {
+  margin: 2px;
+  font-size: 0.8rem;
+}
+
+.timestamp {
+  margin: 0 20px;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+.songItemContainer {
+  margin-top: 30px;
+}
+
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.songInfo {
+  font-family: "Varela Round", sans-serif;
+  position: absolute;
+  left: 10vw;
+}
+
+#music_bar_gif {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.icons {
+  margin-top: 12px;
+}
+
+.icons i {
+  padding: 0 5px;
+  cursor: pointer;
+  color: white;
+}
