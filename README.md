@@ -14,4 +14,4 @@
 4. Below the progress bar, we are setting the current song name and song cover.
 5. Hovering on any song will make it a bit bold to understand which song are you in.
 
-Hope you will enjoy using it. :blush:
+Hope you will enjoy using it [here](https://subhajit100.github.io/Spotify_clone/) :blush:
