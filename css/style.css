@@ -12,6 +12,8 @@ body {
 
 nav {
   font-family: "Montserrat", sans-serif;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -47,20 +49,25 @@ nav ul li {
   font-family: "Varela Round", sans-serif;
   display: flex;
   margin: 20px auto;
-  width: 70%;
+  width: 60%;
   border-radius: 10px;
   padding: 25px;
   background-image: url("../images/animation_music_bg.jpg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 350px 480px;
+  background-size: cover;
+  justify-content: center;
+}
+
+.songList h1 {
+  text-align: center;
 }
 
 .songItem {
   height: 30px;
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   color: black;
   align-items: center;
   border-radius: 15px;
@@ -68,18 +75,18 @@ nav ul li {
 }
 
 .songItem:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .songItem img,
-#masterSongImage{
+#masterSongImage {
   width: 40px;
   height: 25px;
   margin: 0 14px;
   border-radius: 12px;
 }
 
-#masterSongImage{
+#masterSongImage {
   position: relative;
   top: 6px;
 }
@@ -87,6 +94,7 @@ nav ul li {
 .songName {
   margin: 2px;
   font-size: 0.8rem;
+  text-align: center;
 }
 
 .timestamp {
@@ -137,4 +145,66 @@ nav ul li {
   padding: 0 5px;
   cursor: pointer;
   color: white;
+}
+
+@media only screen and (max-width: 930px) {
+  .bottom {
+    height: 140px;
+    justify-content: space-around;
+  }
+
+  .icons {
+    margin-top: 20px;
+  }
+
+  .songInfo {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .songItem {
+    height: 45px;
+  }
+
+  #masterSongName {
+    margin-left: 28px;
+    text-align: center;
+  }
+
+  #masterSongImage {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .container {
+    width: 72%;
+  }
+
+  .timestamp {
+    width: 6.5rem;
+    text-align: right;
+  }
+
+  .songItem {
+    height: 55px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 77%;
+  }
+
+  .timestamp {
+    width: 8rem;
+  }
+
+  .songItem {
+    height: 60px;
+  }
 }
